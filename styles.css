@@ -1,0 +1,389 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+    color: #fff;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-left: 50px;
+    background-color: #161616;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 80px; /* Altura fixa para o header */
+}
+
+header ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none; /* Removendo o sublinhado */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #4d7cfe;
+}
+
+/* Seções */
+.secao {
+    padding: 100px 0;
+    padding-left: 50px;
+}
+
+.titulo-secao {
+    font-size: 42px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.titulo-secao::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100px;
+    height: 4px;
+    background-color: #4d7cfe;
+}
+
+/* Grade de projetos */
+.grade-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card-projetos {
+    background-color: #161616;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-projetos:hover {
+    transform: translateY(-10px);
+}
+
+.img-projeto {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.info-projeto {
+    padding: 20px;
+}
+
+.info-projeto h3 {
+    margin-bottom: 10px;
+}
+
+.info-projeto p {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.info-projeto a {
+    color: #4d7cfe;
+    font-weight: 500;
+}
+
+/* Seção principal */
+.principal {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    min-height: 85vh;
+    padding-top: 80px; /* Adicionando padding-top igual à altura do header */
+}
+
+.principal h1 {
+    font-size: 80px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -4px;
+}
+
+.principal h1 span {
+    color: #4d7cfe;
+}
+
+.principal p {
+    font-size: 20px;
+    max-width: 500px;
+    color: #bbb;
+    margin-bottom: 40px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4d7cfe;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #3a5fcc;
+}
+
+/* Seção Sobre */
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.img-sobre {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.conteudo-sobre h2 {
+    margin-bottom: 30px;
+}
+
+.conteudo-sobre p {
+    margin-bottom: 20px;
+    color: #bbb;
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Estilização dos botões de habilidades */
+.tag-habilidades {
+    background-color: rgba(77, 124, 154, 0.2);
+    color: #4d7cfe;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Adicionando transição */
+    cursor: pointer;
+}
+
+.tag-habilidades:hover {
+    color: #fff; /* Cor do texto ao passar o mouse */
+    background-color: #4d7cfe; /* Cor de fundo ao passar o mouse */
+}
+
+/* Botões de Contato */
+.botoes-contatos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.botao-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    min-width: 160px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao-contato img {
+    width: 24px; /* Tamanho fixo para todos os ícones */
+    height: 24px; /* Tamanho fixo para todos os ícones */
+    object-fit: contain; /* Garante que o ícone não fique distorcido */
+}
+
+.botao-contato:hover {
+    transform: translateY(-5px);
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+.Linkedin {
+    background-color: #0077b5;
+}
+
+.Github {
+    background-color: #333;
+}
+
+.Email {
+    background-color: #ea4335;
+}
+
+/* Rodapé */
+footer {
+    padding: 20px 5%;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+/* Botões flutuantes (WhatsApp e Voltar ao Topo) */
+#whatsapp-button,
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Inicialmente deslocado para baixo */
+}
+
+#back-to-top {
+    bottom: 80px;
+    background-color: #4d7cfe;
+}
+
+#whatsapp-button.visible,
+#back-to-top.visible {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Retorna à posição original */
+}
+
+/* Efeito de cursor personalizado */
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(77, 124, 254, 0.5);
+    z-index: 99;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .secao {
+        padding: 50px 20px;
+        padding-left: 20px;
+    }
+
+    .titulo-secao {
+        font-size: 32px;
+    }
+
+    .grade-projetos {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .principal {
+        margin-left: 20px;
+    }
+
+    .principal h1 {
+        font-size: 50px;
+        letter-spacing: -2px;
+    }
+
+    .principal p {
+        font-size: 18px;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .img-sobre {
+        height: auto;
+    }
+
+    .botoes-contatos {
+        flex-direction: column; /* Em telas pequenas, botões um abaixo do outro */
+        align-items: center;
+    }
+
+    .botao-contato {
+        width: 80%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px;
+        margin-left: 20px;
+    }
+
+    ul {
+        gap: 20px;
+    }
+
+    .principal h1 {
+        font-size: 40px;
+    }
+
+    .principal p {
+        font-size: 16px;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .img-sobre {
+        height: auto;
+    }
+
+    .botoes-contatos {
+        flex-direction: column; /* Em telas muito pequenas, botões um abaixo do outro */
+        align-items: center;
+    }
+
+    .botao-contato {
+        width: 100%;
+        max-width: none;
+    }
+}
