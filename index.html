@@ -1,287 +1,299 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/icons8-programador-16.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfólio | Michael Rodrigues</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%233498db' /%3E%3Cpath d='M35,35 L45,35 L45,65 L35,65 Z' fill='white' /%3E%3Cpath d='M55,35 L65,35 L65,50 L55,50 Z' fill='white' /%3E%3Cpath d='M55,55 L65,55 L65,65 L55,65 Z' fill='white' /%3E%3Cpath d='M45,50 L55,50 L55,55 L45,55 Z' fill='white' /%3E%3C/svg%3E" type="image/svg+xml">
+    <title>Michael Rodrigues - Portfólio</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Cabeçalho de navegação -->
-    <header>
-        <ul>
-            <li class="efeito-cursor"><a href="#home">Home</a></li>
-            <li class="efeito-cursor"><a href="#projetos">Projetos</a></li>
-            <li class="efeito-cursor"><a href="#sobre">Sobre</a></li>
-            <li class="efeito-cursor"><a href="#contato">Contato</a></li>
-        </ul>
-    </header>
-
-    <!-- Seção principal de apresentação -->
-    <section class="principal" id="home">
-        <div>
-            <h1>Olá, eu sou <span>Michael Rodrigues</span>.</h1>
-            <p>Sou um profissional apaixonado por desafios e por criar soluções digitais que impactam positivamente a
-                vida das pessoas. Com expertise em desenvolvimento web e mobile, tenho a habilidade de transformar
-                conceitos em projetos funcionais, escaláveis e de alta performance.
-
-                Minha jornada é impulsionada pela busca constante por inovação, utilizando as melhores tecnologias e
-                práticas do mercado para entregar resultados que superam expectativas. Seja desenvolvendo interfaces
-                intuitivas ou arquitetando sistemas robustos, meu objetivo é sempre o mesmo: entregar soluções que não
-                apenas resolvem problemas, mas também inspiram e agregam valor.</p>
-        </div>
-    </section>
-
-    <!-- Seção de projetos -->
-    <section id="projetos" class="secao">
-        <h2 class="titulo-secao">Projetos</h2>
-        <div class="grade-projetos">
-            <!-- Card 1: Controle de Estoque -->
-            <div class="card-projetos efeito-cursor">
-                <img class="img-projeto" src="./img/login-pc.jpg" alt="Controle de Estoque">
-                <div class="info-projeto">
-                    <h3>Controle de Estoque</h3>
-                    <p>Sistema Web responsivo para gerenciamento de estoque com Angular 16, .NET e MongoDB. Inclui
-                        dashboard, cadastro de produtos, validação de localização e controle de níveis de estoque.</p>
-                    <a href="https://estoque-frontend-prod.onrender.com/" target="_blank" rel="noopener noreferrer">Ver
-                        projeto ⭢</a><br>
-                    <a href="https://github.com/Michaelrodriguesds/Controle_De_Estoque/tree/main" target="_blank"
-                        rel="noopener noreferrer">Ver código ⭢</a>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">
+                <svg width="50" height="50" viewBox="0 0 100 100" class="logo-svg">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#3498db" />
+                            <stop offset="100%" stop-color="#2c3e50" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="45" fill="url(#gradient)" />
+                    <path d="M35,35 L45,35 L45,65 L35,65 Z" fill="white" />
+                    <path d="M55,35 L65,35 L65,50 L55,50 Z" fill="white" />
+                    <path d="M55,55 L65,55 L65,65 L55,65 Z" fill="white" />
+                    <path d="M45,50 L55,50 L55,55 L45,55 Z" fill="white" />
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-name">Michael Rodrigues</span>
+                    <span class="logo-title">Desenvolvedor Full Stack</span>
                 </div>
-            </div>
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="hero" id="home">
+            <h1>Criando experiências digitais excepcionais</h1>
+            <p>Sou Desenvolvedor Full Stack com experiência em projetos dockerizados, APIs, aplicações com persistência de dados e desenvolvimento mobile. Tenho forte atuação em front-end Back-end e design, criando interfaces modernas, responsivas e focadas em proporcionar a melhor experiência ao usuário.
 
-            <!-- Card 2: Mirian Designer -->
-            <div class="card-projetos efeito-cursor">
-                <img class="img-projeto" src="./img/mirianSit.png" alt="Mirian Designer">
-                <div class="info-projeto">
-                    <h3>Mirian Designer</h3>
-                    <p>Site em React JS que renderiza informações de uma API. O usuário pode modificar informações
-                        através de login e senha.</p>
-                    <a href="https://deploy-preview-7--miriandesignerepiladora.netlify.app/" target="_blank"
-                        rel="noopener noreferrer">Ver projeto ⭢</a><br>
-                    <a href="https://github.com/Michaelrodriguesds/miriandesignerepiladora" target="_blank"
-                        rel="noopener noreferrer">Ver código ⭢</a>
-                </div>
-            </div>
+Além da parte técnica, trago habilidades interpessoais que me destacam: trabalho em equipe, organização, foco, resiliência e entusiasmo genuíno pela programação. Tenho prazer em transformar ideias em soluções funcionais, escaláveis e visualmente atraentes.
 
-            <!-- Card 3: Simple Omelette Recipe -->
-            <div class="card-projetos efeito-cursor">
-                <img class="img-projeto" src="./img/simpleOmelette.png" alt="Simple Omelette Recipe">
-                <div class="info-projeto">
-                    <h3>Simple Omelette Recipe</h3>
-                    <p>Desafio de recriar um site de receita a partir de um template, com design e código desenvolvidos
-                        do zero.</p>
-                    <a href="https://michaelrodriguesds.github.io/Receita_Front-end-Mentor/" target="_blank"
-                        rel="noopener noreferrer">Ver projeto ⭢</a><br>
-                    <a href="https://github.com/Michaelrodriguesds/Receita_Front-end-Mentor?tab=readme-ov-file"
-                        target="_blank" rel="noopener noreferrer">Ver código ⭢</a>
-                </div>
-            </div>
-
-            <!-- Card 4: Controle Financeiro -->
-            <div class="card-projetos ">       
-                <img class="img-projeto" src="./img/login.png"alt="controle financeiro">
-                <div class="info-projeto">
-                    <h3>App Flutter / Controle financeiro</h3>
-                    <p>O meu_app_financas foi pensado para oferecer controle, praticidade e segurança.
-                        Com ele, posso gerenciar minha vida financeira e minhas ideias em um só lugar, criando, editando
-                        e excluindo projetos e anotações com facilidade.
-                        Também há um modo de privacidade e autenticação para proteger dados sensíveis.
-                        Projeto Desenvolvido ultilizando Dart ~~ Flutter , App Android</p>
-                        <a href="https://meu-app-financas.onrender.com/" target="_blank" rel="noopener noreferrer">Ver
-                            projeto ⭢</a><br>
-                        <a href="https://github.com/Michaelrodriguesds/Meu-AppControll" target="_blank"
-                            rel="noopener noreferrer">Ver codigo ⭢</a>
-                </div>
-            </div>
-
-            <!-- Card 5: Ordenação de Números -->
-            <div class="card-projetos efeito-cursor">
-                <img class="img-projeto" src="./img/ordenaçaoNumerico.png" alt="Ordenação de Números">
-                <div class="info-projeto">
-                    <h3>Ordenação de Números</h3>
-                    <p>Site que armazena números fora de ordem e os organiza ou desorganiza dinamicamente.</p>
-                    <a href="https://michaelrodriguesds.github.io/projeto_ordenando_numeros/ordenando.html"
-                        target="_blank" rel="noopener noreferrer">Ver projeto ⭢</a><br>
-                    <a href="https://github.com/Michaelrodriguesds/projeto_ordenando_numeros" target="_blank"
-                        rel="noopener noreferrer">Ver código ⭢</a>
-                </div>
-            </div>
-
-            <!-- Card 6: Receita Culinária -->
-            <div class="card-projetos efeito-cursor">
-                <img class="img-projeto" src="./img/TiaJurema.png" alt="Receita Culinária">
-                <div class="info-projeto">
-                    <h3>Receita Culinária</h3>
-                    <p>Site de receitas culinárias com navegação entre páginas e layout responsivo.</p>
-                    <a href="https://michaelrodriguesds.github.io/projeto_tia-jurema/home/home.html" target="_blank"
-                        rel="noopener noreferrer">Ver projeto ⭢</a><br>
-                    <a href="https://github.com/Michaelrodriguesds/projeto_tia-jurema?tab=readme-ov-file"
-                        target="_blank" rel="noopener noreferrer">Ver código ⭢</a>
-                </div>
-            </div>
-
-            <!-- Card 7: Lista de Usuários -->
-            <div class="card-projetos efeito-cursor">
-                <img class="img-projeto" src="./img/ListaUsuario.png" alt="Lista de Usuários">
-                <div class="info-projeto">
-                    <h3>Lista de Usuários</h3>
-                    <p>Projeto que carrega dados de uma API e os renderiza em uma interface amigável.</p>
-                    <a href="https://michaelrodriguesds.github.io/projeto_usuario-de-teste/" target="_blank"
-                        rel="noopener noreferrer">Ver projeto ⭢</a><br>
-                    <a href="https://github.com/Michaelrodriguesds/projeto_usuario-de-teste/blob/main/index.html"
-                        target="_blank" rel="noopener noreferrer">Ver código ⭢</a>
-                </div>
-            </div>
-
-            <!-- Card 8: App Mobile - Flutter -->
-            <div class="card-projetos efeito-cursor">
-                <img class="img-projeto" src="./img/FluteeMobil.png" alt="App Mobile Flutter">
-                <div class="info-projeto">
-                    <h3>App Mobile - Flutter</h3>
-                    <p>Aplicativo mobile desenvolvido em Flutter, com foco em usabilidade e design moderno.</p>
-                    <a href="https://github.com/Michaelrodriguesds/App_Em_Flutter" target="_blank"
-                        rel="noopener noreferrer">Ver projeto ⭢</a><br>
-                    <a href="https://github.com/Michaelrodriguesds/App_Em_Flutter" target="_blank"
-                        rel="noopener noreferrer">Ver código ⭢</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção sobre mim -->
-    <section class="secao" id="sobre">
-        <h2 class="titulo-secao">Sobre Mim</h2>
-        <div class="sobre">
-            <img class="img-sobre" src="./img/Perfil.jpg" alt="Foto de perfil">
-            <div class="conteudo-sobre">
-                <h2 class="titulo-destaque">Desenvolvedor Full Stack & UI/UX Designer</h2>
-
-                <p class="destaque">A falta de oportunidades iniciais não me impediu - transformei desafios em motivação
-                    para construir minha própria experiência profissional através de projetos significativos.</p>
-
-                <div class="expertise">
-                    <h3>Minha Expertise:</h3>
-                    <ul class="lista-habilidades">
-                        <li><span class="icone">💻</span> <strong>Front-end:</strong> React, Angular, JavaScript,
-                            TypeScript</li>
-                        <li><span class="icone">⚙️</span> <strong>Back-end:</strong> Node.js, .NET, Python</li>
-                        <li><span class="icone">🗃️</span> <strong>Banco de Dados:</strong> MongoDB, SQL</li>
-                        <li><span class="icone">🐳</span> <strong>DevOps:</strong> Docker, Deploy em Cloud</li>
-                        <li><span class="icone">🎨</span> <strong>UI/UX:</strong> Design de Interfaces, Experiência do
-                            Usuário</li>
-                    </ul>
-                </div>
-
-                <div class="filosofia">
-                    <h3>Minha Filosofia de Trabalho:</h3>
-                    <div class="pilares">
-                        <div class="pilar">
-                            <span class="icone-pilar">✅</span>
-                            <h4>Código Usável</h4>
-                            <p>Interfaces bem pensadas com fluxos intuitivos e experiência agradável</p>
-                        </div>
-                        <div class="pilar">
-                            <span class="icone-pilar">🚀</span>
-                            <h4>Código Escalável</h4>
-                            <p>Arquitetura limpa e containerizada para crescimento sustentável</p>
-                        </div>
-                        <div class="pilar">
-                            <span class="icone-pilar">💡</span>
-                            <h4>Código Impactante</h4>
-                            <p>Soluções que resolvem problemas reais de forma eficiente</p>
-                        </div>
+Estou sempre em busca de aprimorar meus conhecimentos atuais e aprender novas tecnologias, mantendo-me atualizado para entregar soluções cada vez mais eficientes e inovadoras. Minha capacidade de adaptação e curiosidade constante me permitem evoluir junto com os desafios do mercado.</p>
+            <a href="#projetos" class="btn">Ver Portfólio</a>
+        </section>
+        
+        <section class="secao" id="projetos">
+            <h2 class="titulo-secao">Projetos</h2>
+            <div class="grade-projetos">
+                <!-- Card 1: Controle de Estoque -->
+                <div class="card-projetos">
+                    <img class="img-projeto" src="./img/login-pc.jpg" alt="Controle de Estoque">
+                    <div class="info-projeto">
+                        <h3>Controle de Estoque</h3>
+                        <p>Sistema Web responsivo para gerenciamento de estoque com Angular 16, .NET e MongoDB. Inclui
+                            dashboard, cadastro de produtos, validação de localização e controle de níveis de estoque.</p>
+                        <a href="https://estoque-frontend-prod.onrender.com/" target="_blank" rel="noopener noreferrer">Ver
+                            projeto ⭢</a>
+                        <a href="https://github.com/Michaelrodriguesds/Controle_De_Estoque/tree/main" target="_blank"
+                            rel="noopener noreferrer">Ver código ⭢</a>
                     </div>
                 </div>
 
-                <div class="diferenciais">
-                    <h3>O Que Me Diferencia:</h3>
-                    <ul class="lista-diferenciais">
-                        <li>Visão completa do ciclo de desenvolvimento</li>
-                        <li>Sensibilidade para criar experiências digitais memoráveis</li>
-                        <li>Paixão por transformar limitações em oportunidades criativas</li>
-                    </ul>
+                <!-- Card 2: Mirian Designer -->
+                <div class="card-projetos">
+                    <img class="img-projeto" src="./img/mirianSit.png" alt="Mirian Designer">
+                    <div class="info-projeto">
+                        <h3>Mirian Designer</h3>
+                        <p>Site em React JS que renderiza informações de uma API. O usuário pode modificar informações
+                            através de login and senha.</p>
+                        <a href="https://deploy-preview-7--miriandesignerepiladora.netlify.app/" target="_blank"
+                            rel="noopener noreferrer">Ver projeto ⭢</a>
+                        <a href="https://github.com/Michaelrodriguesds/miriandesignerepiladora" target="_blank"
+                            rel="noopener noreferrer">Ver código ⭢</a>
+                    </div>
                 </div>
 
-                <blockquote class="citacao">
-                    "O que começou como necessidade de criar minhas próprias oportunidades transformou-se em minha maior
-                    força - a capacidade de aprender, implementar e entregar soluções completas com padrões
-                    profissionais."
-                </blockquote>
+                <!-- Card 3: Simple Omelette Recipe -->
+                <div class="card-projetos">
+                    <img class="img-projeto" src="./img/simpleOmelette.png" alt="Simple Omelette Recipe">
+                    <div class="info-projeto">
+                        <h3>Simple Omelette Recipe</h3>
+                        <p>Desafio de recriar um site de receita a partir de um template, com design e código desenvolvidos
+                            do zero.</p>
+                        <a href="https://michaelrodriguesds.github.io/Receita_Front-end-Mentor/" target="_blank"
+                            rel="noopener noreferrer">Ver projeto ⭢</a>
+                        <a href="https://github.com/Michaelrodriguesds/Receita_Front-end-Mentor?tab=readme-ov-file"
+                            target="_blank" rel="noopener noreferrer">Ver código ⭢</a>
+                    </div>
+                </div>
 
-                <p class="chamada">Pronto para transformar suas ideias em realidade? Vamos construir algo extraordinário
-                    juntos! 🚀</p>
+                <!-- Card 4: Controle Financeiro -->
+                <div class="card-projetos">       
+                    <img class="img-projeto" src="./img/login.png"alt="controle financeiro">
+                    <div class="info-projeto">
+                        <h3>App Flutter / Controle financeiro</h3>
+                        <p>O meu_app_financas foi pensado para oferecer controle, praticidade e segurança.
+                            Com ele, posso gerenciar minha vida financeira e minhas ideias em um só lugar, criando, editando
+                            e excluindo projetos e anotações com facilidade.</p>
+                        <a href="https://meu-app-financas.onrender.com/" target="_blank" rel="noopener noreferrer">Ver
+                            projeto ⭢</a>
+                        <a href="https://github.com/Michaelrodriguesds/Meu-AppControll" target="_blank"
+                            rel="noopener noreferrer">Ver código ⭢</a>
+                    </div>
+                </div>
+
+                <!-- Card 5: Ordenação de Números -->
+                <div class="card-projetos">
+                    <img class="img-projeto" src="./img/ordenaçaoNumerico.png" alt="Ordenação de Números">
+                    <div class="info-projeto">
+                        <h3>Ordenação de Números</h3>
+                        <p>Site que armazena números fora de ordem e os organiza ou desorganiza dinamicamente.</p>
+                        <a href="https://michaelrodriguesds.github.io/projeto_ordenando_numeros/ordenando.html"
+                            target="_blank" rel="noopener noreferrer">Ver projeto ⭢</a>
+                        <a href="https://github.com/Michaelrodriguesds/projeto_ordenando_numeros" target="_blank"
+                            rel="noopener noreferrer">Ver código ⭢</a>
+                    </div>
+                </div>
+
+                <!-- Card 6: Receita Culinária -->
+                <div class="card-projetos">
+                    <img class="img-projeto" src="./img/TiaJurema.png" alt="Receita Culinária">
+                    <div class="info-projeto">
+                        <h3>Receita Culinária</h3>
+                        <p>Site de receitas culinárias com navegação entre páginas e layout responsivo.</p>
+                        <a href="https://michaelrodriguesds.github.io/projeto_tia-jurema/home/home.html" target="_blank"
+                            rel="noopener noreferrer">Ver projeto ⭢</a>
+                        <a href="https://github.com/Michaelrodriguesds/projeto_tia-jurema?tab=readme-ov-file"
+                            target="_blank" rel="noopener noreferrer">Ver código ⭢</a>
+                    </div>
+                </div>
+
+                <!-- Card 7: Lista de Usuários -->
+                <div class="card-projetos">
+                    <img class="img-projeto" src="./img/ListaUsuario.png" alt="Lista de Usuários">
+                    <div class="info-projeto">
+                        <h3>Lista de Usuários</h3>
+                        <p>Projeto that carrega dados de uma API e os renderiza em uma interface amigável.</p>
+                        <a href="https://michaelrodriguesds.github.io/projeto_usuario-de-teste/" target="_blank"
+                            rel="noopener noreferrer">Ver projeto ⭢</a>
+                        <a href="https://github.com/Michaelrodriguesds/projeto_usuario-de-teste/blob/main/index.html"
+                            target="_blank" rel="noopener noreferrer">Ver código ⭢</a>
+                    </div>
+                </div>
+
+                <!-- Card 8: App Mobile - Flutter -->
+                <div class="card-projetos">
+                    <img class="img-projeto" src="./img/FluteeMobil.png" alt="App Mobile Flutter">
+                    <div class="info-projeto">
+                        <h3>App Mobile - Flutter</h3>
+                        <p>Aplicativo mobile desenvolvido em Flutter, com foco em usabilidade e design moderno.</p>
+                        <a href="https://github.com/Michaelrodriguesds/App_Em_Flutter" target="_blank"
+                            rel="noopener noreferrer">Ver projeto ⭢</a>
+                        <a href="https://github.com/Michaelrodriguesds/App_Em_Flutter" target="_blank"
+                            rel="noopener noreferrer">Ver código ⭢</a>
+                    </div>
+                </div>
             </div>
-            <div class="habilidades">
-                <span class="tag-habilidades efeito-cursor">Html-5</span>
-                <span class="tag-habilidades efeito-cursor">CSS-3</span>
-                <span class="tag-habilidades efeito-cursor">Javascript</span>
-                <span class="tag-habilidades efeito-cursor">Python</span>
-                <span class="tag-habilidades efeito-cursor">Java</span>
-                <span class="tag-habilidades efeito-cursor">React-js</span>
-                <span class="tag-habilidades efeito-cursor">Node</span>
-                <span class="tag-habilidades efeito-cursor">Angular</span>
-                <span class="tag-habilidades efeito-cursor">.NET</span>
-                <span class="tag-habilidades efeito-cursor">MongoDB</span>
-                <span class="tag-habilidades efeito-cursor">Docker</span>
+        </section>
+
+        <section class="secao" id="sobre">
+            <h2 class="titulo-secao">Sobre Mim</h2>
+            <div class="sobre">
+                <img class="img-sobre" src="img/Perfil.jpg"alt="Foto de perfil">
+                <div class="conteudo-sobre">
+                    <h2 class="titulo-destaque">Desenvolvedor Full Stack & UI/UX Designer</h2>
+
+                    <p class="destaque">A falta de oportunidades iniciais não me impediu - transformei desafios em motivação
+                        para construir minha própria experiência profissional através de projetos significativos.</p>
+
+                    <div class="expertise">
+                        <h3>Minha Expertise:</h3>
+                        <ul class="lista-habilidades">
+                            <li><span class="icone">💻</span> <strong>Front-end:</strong> React, Angular, JavaScript,
+                                TypeScript</li>
+                            <li><span class="icone">⚙️</span> <strong>Back-end:</strong> Node.js, .NET, Python</li>
+                            <li><span class="icone">🗃️</span> <strong>Banco de Dados:</strong> MongoDB, SQL</li>
+                            <li><span class="icone">🐳</span> <strong>DevOps:</strong> Docker, Deploy em Cloud</li>
+                            <li><span class="icone">🎨</span> <strong>UI/UX:</strong> Design de Interfaces, Experiência do
+                                Usuário</li>
+                        </ul>
+                    </div>
+
+                    <div class="filosofia">
+                        <h3>Minha Filosofia de Trabalho:</h3>
+                        <div class="pilares">
+                            <div class="pilar">
+                                <span class="icone-pilar">✅</span>
+                                <h4>Código Usável</h4>
+                                <p>Interfaces bem pensadas com fluxos intuitivos e experiência agradável</p>
+                            </div>
+                            <div class="pilar">
+                                <span class="icone-pilar">🚀</span>
+                                <h4>Código Escalável</h4>
+                                <p>Arquitetura limpa e containerizada para crescimento sustentável</p>
+                            </div>
+                            <div class="pilar">
+                                <span class="icone-pilar">💡</span>
+                                <h4>Código Impactante</h4>
+                                <p>Soluções que resolvem problemas reais de forma eficiente</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="diferenciais">
+                        <h3>O Que Me Diferencia:</h3>
+                        <ul class="lista-diferenciais">
+                            <li>Visão completa do ciclo de desenvolvimento</li>
+                            <li>Sensibilidade para criar experiências digitais memoráveis</li>
+                            <li>Paixão por transformar limitações em oportunidades creativas</li>
+                        </ul>
+                    </div>
+
+                    <blockquote class="citacao">
+                        "O que começou como necessidade de criar minhas próprias oportunidades transformou-se em minha maior
+                        força - a capacidade de aprender, implementar e entregar soluções completas com padrões
+                        profissionais."
+                    </blockquote>
+
+                    <p class="chamada">Pronto para transformar suas ideias em realidade? Vamos construir algo extraordinário
+                        juntos! 🚀</p>
+                        
+                    <div class="habilidades">
+                        <span class="tag-habilidades">HTML-5</span>
+                        <span class="tag-habilidades">CSS-3</span>
+                        <span class="tag-habilidades">JavaScript</span>
+                        <span class="tag-habilidades">Python</span>
+                        <span class="tag-habilidades">Java</span>
+                        <span class="tag-habilidades">React.js</span>
+                        <span class="tag-habilidades">Node.js</span>
+                        <span class="tag-habilidades">Angular</span>
+                        <span class="tag-habilidades">.NET</span>
+                        <span class="tag-habilidades">MongoDB</span>
+                        <span class="tag-habilidades">Docker</span>
+                        <span class="tag-habilidades">PHP</span>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="secao" id="contato">
+            <h2 class="titulo-secao">Contato</h2>
+            <div class="botoes-contatos">
+                <a class="botao-contato whatsapp"
+                    href="https://api.whatsapp.com/send?phone=5521994550189&text=Olá,%20como%20posso%20ter%20ajuda?"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./img/icons8-whatsapp-16.png" alt="WhatsApp">
+                    <span>WhatsApp</span>
+                </a>
+
+                <a class="botao-contato Linkedin"
+                    href="https://www.linkedin.com/in/michael-rodrigues-4%C2%B0-b741a1104/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./img/icons8-linkedin-48.png" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+
+                <a class="botao-contato Github" href="https://github.com/Michaelrodriguesds" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./img/icons8-github-24.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+
+                <a class="botao-contato Email" href="mailto:myshelrodrigues@gmail.com">
+                    <img src="./img/icons8-nova-mensagem-64.png" alt="Email">
+                    <span>Email</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Michael Rodrigues. Todos os direitos reservados.</p>
         </div>
-    </section>
-
-    <!-- Seção de contato -->
-    <section class="secao" id="contato">
-        <h2 class="titulo-secao">Contato</h2>
-        <div class="botoes-contatos">
-            <a class="botao-contato whatsapp efeito-cursor"
-                href="https://api.whatsapp.com/send?phone=5521994550189&text=Olá,%20como%20posso%20ter%20ajuda?"
-                target="_blank" rel="noopener noreferrer">
-                <img src="./img/icons8-whatsapp-16.png" alt="WhatsApp">
-                <span>WhatsApp</span>
-            </a>
-
-            <a class="botao-contato Linkedin efeito-cursor"
-                href="https://www.linkedin.com/in/michael-rodrigues-4%C2%B0-b741a1104/" target="_blank"
-                rel="noopener noreferrer">
-                <img src="./img/icons8-linkedin-48.png" alt="LinkedIn">
-                <span>LinkedIn</span>
-            </a>
-
-            <a class="botao-contato Github efeito-cursor" href="https://github.com/Michaelrodriguesds" target="_blank"
-                rel="noopener noreferrer">
-                <img src="./img/icons8-github-24.png" alt="GitHub">
-                <span>GitHub</span>
-            </a>
-
-            <a class="botao-contato Email efeito-cursor" href="mailto:myshelrodrigues@gmail.com">
-                <img src="./img/icons8-nova-mensagem-64.png" alt="Email">
-                <span>Email</span>
-            </a>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>Todos Direitos Reservados 2024</footer>
+    </footer>
 
     <!-- Botão flutuante de WhatsApp -->
-    <a id="whatsapp-button" class="whatsapp-button"
-        href="https://api.whatsapp.com/send?phone=5521994550189&text=Olá,%20como%20posso%20ter%20ajuda?" target="_blank"
-        rel="noopener noreferrer">
-        <img src="./img/icons8-whatsapp-16.png" alt="WhatsApp">
+    <a href="https://api.whatsapp.com/send?phone=5521994550189&text=Olá,%20gostaria%20de%20conversar%20sobre%20seu%20portfólio!" 
+       class="whatsapp-float" 
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Entrar em contato via WhatsApp">
+        <img src="./img/icons8-whatsapp-16.png" alt="WhatsApp" style="width: 30px; height: 30px;">
     </a>
 
     <!-- Botão flutuante de Voltar ao Topo -->
     <a id="back-to-top" class="back-to-top" href="#home">
-        <img src="./img/icons8-flecha-grossa-apontando-para-cima-24.png" alt="Voltar ao Topo">
+        <img src="/img/icons8-flecha-grossa-apontando-para-cima-24.png" alt="Voltar ao Topo" style="width: 24px; height: 24px;">
     </a>
-
-    <!-- Cursor personalizado -->
-    <div class="cursor"></div>
-
-    <!-- Script JavaScript -->
-    <script src="scripts.js"></script>
+<script src="scripts.js"></script>
 </body>
-
 </html>
