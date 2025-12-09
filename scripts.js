@@ -35,7 +35,6 @@ backToTopButton.addEventListener('click', function(e) {
     });
 });
 
-
 // ===== ANIMAÇÃO DE TREMIDA NO WHATSAPP =====
 setInterval(() => {
     whatsappButton.classList.add('whatsapp-shake');
@@ -43,7 +42,6 @@ setInterval(() => {
         whatsappButton.classList.remove('whatsapp-shake');
     }, 400);
 }, 6000);
-
 
 // ===== NAVEGAÇÃO SUAVE ENTRE SEÇÕES =====
 const navLinks = document.querySelectorAll('nav a');
@@ -68,4 +66,13 @@ navLinks.forEach(link => {
     });
 });
 
-
+// ===== CARREGAMENTO DE IMAGENS COM FALLBACK =====
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.img-projeto[src*="githubusercontent.com"]');
+    
+    images.forEach(img => {
+        img.onerror = function() {
+            this.src = 'img/placeholder-php.jpg';
+        };
+    });
+});
