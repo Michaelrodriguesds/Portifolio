@@ -474,23 +474,22 @@ nav a:hover::after {
     height: 50px;
     background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
     color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 24px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
     box-shadow: 0 4px 16px rgba(52, 152, 219, 0.4);
-    z-index: 1000;
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
     opacity: 0;
-    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 #back-to-top.visible {
     opacity: 1;
-    visibility: visible;
+    pointer-events: auto;
 }
 
 #back-to-top:hover {
